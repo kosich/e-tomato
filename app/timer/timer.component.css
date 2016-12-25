@@ -1,7 +1,9 @@
 .container {
   position: absolute;
-  top: 30%;
-  left: 10px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   text-align: center;
 }
 
@@ -11,4 +13,21 @@
 
 .container a {
   font-size: 1.4rem;
+}
+
+
+.container div {
+  margin: 1em 0;
+}
+
+
+.container span {
+  padding: 1em 2em;
+  margin: 0 .2em;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+.container span:active {
+  background: rgba(255, 255, 255, .2);
 }

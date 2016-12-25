@@ -9,7 +9,7 @@ export default class Timer extends Component {
     return (
       <div>
         <div className={styles.container}>
-          <h2>Hello, Lena</h2>
+          <h2>Hello, Lena!</h2>
         </div>
       </div>
     );

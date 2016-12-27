@@ -79,21 +79,49 @@ export default class Timer extends Component {
   render() {
     let button;
     if (this.interval){
-      button = <span onClick={ this.pause.bind(this)} >pause</span>;
+      button = (
+        <span onClick={ this.pause.bind(this)} >
+          <i className="fa fa-pause" />
+        </span>
+      )
     } else {
-      button = <span onClick={ this.play.bind(this) } >play</span>;
+      button = (
+        <span onClick={ this.play.bind(this) } >
+          <i className="fa fa-play" />
+        </span>
+      )
     }
+
+//           <i className="fa fa-bars" />
+//           <i className="fa fa-bath" />
+//           <i className="fa fa-battery-0" />
+//           <i className="fa fa-battery-1" />
+//           <i className="fa fa-battery-2" />
+//           <i className="fa fa-battery-3" />
+//           <i className="fa fa-battery-4" />
+//           <i className="fa fa-bed" />
+//           <i className="fa fa-cog" />
+//           <i className="fa fa-child" />
+//           <i className="fa fa-refresh" />
+//           <i className="fa fa-rocket" />
+//           <i className="fa fa-sliders" />
+//           <i className="fa fa-lightbulb-o" />
+//           <i className="fa fa-coffee" />
+//           <i className="fa fa-clock-o" />
 
     return (
       <div>
         <div className={styles.container}>
-          <h3>Hello, Olena!</h3>
+
+          <h1>Lena <i className="fa fa-heart" /></h1>
 
           <h2>{this.state.time}</h2>
 
           <div>
             {button}
-            <span onClick={ this.reset.bind(this)} >reset</span>
+            <span onClick={ this.reset.bind(this) } >
+              <i className="fa fa-stop" />
+            </span>
           </div>
         </div>
       </div>

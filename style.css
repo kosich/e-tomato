@@ -12,6 +12,8 @@ body {
   align-items: center;
   font-size: 2rem;
   text-align: center;
+
+  cursor: none;
 }
 
 

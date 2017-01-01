@@ -1,0 +1,15 @@
+body {
+  position: relative;
+  color: white;
+  height: 100vh;
+  background-color: #232C39;
+  background-image: linear-gradient(45deg, rgba(0, 216, 255, .5) 10%, rgba(255, 0, 224, 0.7));
+  font-family: Arial, Helvetica, Helvetica Neue, serif;
+  overflow-y: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+}

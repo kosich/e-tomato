@@ -13,3 +13,46 @@ body {
   font-size: 2rem;
   text-align: center;
 }
+
+
+#heart {
+  animation-name: heartbeat; 
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .85 );
+    text-shadow: 0 0px 2px black;
+  }
+  10%
+  {
+    transform: scale( 1 );
+    text-shadow: 0 2px 2px black;
+  }
+  20%
+  {
+    transform: scale( .85 );
+    text-shadow: 0 0px 2px black;
+  }
+  30%
+  {
+    transform: scale( 1 );
+    text-shadow: 0 2px 2px black;
+  }
+  40%
+  {
+    transform: scale( .85 );
+    text-shadow: 0 0px 2px black;
+  }
+  100%
+  {
+    transform: scale( .85 );
+    text-shadow: 0 0 0 transparent;
+  }
+}
